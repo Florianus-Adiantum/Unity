@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraZoom : MonoBehaviour
 {
-    
+    //Bu kodu kameraya bagladiginizda mouse tekerlegi ile zoom yapabilmenizi saglar
     void Start()
     {
         
