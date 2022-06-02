@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMoveScript : MonoBehaviour
 {
+    //Bu kodu oyun karakterinize baglarsaniz karakterin 4 ana yöne hareket edebilmesini saglarsiniz
     private float speed = 10;
     void Start()
     {
