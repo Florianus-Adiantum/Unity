@@ -8,6 +8,7 @@ public class FpsCameraScript : MonoBehaviour
     //Kamerayi hiyerarside objenin içine koyun
     //Karakter icin gerekli duzenlemeleri yapin
     //Bu kodu objeye baglayin camera kismina da objenin icindeki kamerayi baglayin
+    //Buradaki amac kameranin rotation kisminda ozgur olup position kisminda bagli oldugu obje ile sinirli kalmasidir
     //FPS kamerasi hazirdir kullanabilirsiniz
     public GameObject camera;
     float sensibility = 5f;
