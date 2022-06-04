@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class FpsCameraScript : MonoBehaviour
 {
+    //Hareket etmesini sağlayan bir scripte bagli olan oyun objesi olusturun
+    //Kamerayi hiyerarside objenin içine koyun
+    //Karakter icin gerekli duzenlemeleri yapin
+    //Bu kodu objeye baglayin camera kismina da objenin icindeki kamerayi baglayin
+    //FPS kamerasi hazirdir kullanabilirsiniz
     public GameObject camera;
-    
-
     float sensibility = 5f;
     float softness = 2f;
     Vector2 gecisPos;
