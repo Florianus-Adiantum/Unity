@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class GunShootScript : MonoBehaviour
 {
     //Bu kod 3D oyunlar icindir
-    //Bu kodu kullanabilmek icin bir silah ve mermi prefablari olusturun
+    //Bu kodu kullanabilmek icin birer silah ve mermi prefablari olusturun
     //Mermi prefabi icin rigidbody ekleyin
     //Silahin ucunda merminin spawn olup firlamasi icin namlu adinda bir obje olusturun ve silah prefabi icinde oldugundan emin olun
     //Bu kodu oyun karakterinize baglayin
