@@ -16,7 +16,7 @@ public class CameraZoom : MonoBehaviour
         
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
-            if (Camera.main.fieldOfView <= 125)
+            if (Camera.main.fieldOfView <= 75)
                 Camera.main.fieldOfView += 2;
             
 
@@ -24,7 +24,7 @@ public class CameraZoom : MonoBehaviour
         
         if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
-            if (Camera.main.fieldOfView > 2)
+            if (Camera.main.fieldOfView > 5)
                 Camera.main.fieldOfView -= 2;
             
         }
