@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameObjectPosition2D : MonoBehaviour
 {
     //Bu kod 2D oyunlar icindir
-    //Bagladiginiz 2d objenin mouse ile es zamanli saga ve sola hareket etmesini saglar
+    //Bagladiginiz 2D objenin mouse ile es zamanli saga ve sola hareket etmesini saglar
     void Start()
     {
         
