@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SetTransform : MonoBehaviour
 {
-    //bu metod istediðiniz objenin 3 eksendeki yerini kontrol etmenizi saglar
-    //metodu sürekli olarak veya belli durumlarda cok amacli kullanabilirsiniz
+    //bu metod istediÃ°iniz objenin 3 eksendeki yerini kontrol etmenizi saglar
+    //metodu sÃ¼rekli olarak veya belli durumlarda cok amacli kullanabilirsiniz
     void Start()
     {
         
@@ -13,7 +13,7 @@ public class SetTransform : MonoBehaviour
     void Update()
     {
         SetTransformXYZ(5, 5, 5);//3 deger icin ornek kullanim
-        SetTransformY(5);//tek deger icin ornek kullaným
+        SetTransformY(5);//tek deger icin ornek kullanim
     }
     void SetTransformXYZ(float x, float y, float z)//x y z eksenleri icin 3 float degeri alir
     {
