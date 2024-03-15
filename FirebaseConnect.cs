@@ -83,7 +83,6 @@ public class FirebaseConnect : MonoBehaviour
         //veritabanindaki verileri ceker ve verilerin tutuldugu class icine yazilir class icindeki degiskenlerden guncel verilere erisilebilir
         
         var serverData = reference.Child("users").Child(userID).GetValueAsync();
-        yield return new WaitUntil(predicate: () => serverData.IsCompleted);
 
         DataSnapshot snapshot = serverData.Result;
         string jsonData = snapshot.GetRawJsonValue();
