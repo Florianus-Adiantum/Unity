@@ -80,9 +80,12 @@ public class FirebaseConnect : MonoBehaviour
     }
     public void LoadData()
     {
-        //veritabanindaki verileri ceker ve verilerin tutuldugu class icine yazilir class icindeki degiskenlerden guncel verilere erisilebilir
-        
+        StartCoroutine(LoadDataEnum());
+    }
+    IEnumerator LoadDataEnum()
+    {
         var serverData = reference.Child("users").Child(userID).GetValueAsync();
+        yield return new WaitUntil(predicate: () => serverData.IsCompleted);
 
         DataSnapshot snapshot = serverData.Result;
         string jsonData = snapshot.GetRawJsonValue();
@@ -90,8 +93,8 @@ public class FirebaseConnect : MonoBehaviour
         if (jsonData != null)
         {
             dts = JsonUtility.FromJson<DataToSave>(jsonData);
-
             Debug.Log("Data Loaded Successfully");
+
         }
         else
         {
